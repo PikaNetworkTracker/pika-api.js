@@ -27,6 +27,7 @@ export interface GetLeaderboardOptions {
 	interval?: (typeof Interval)[keyof typeof Interval] | null;
 	mode?: (typeof Mode)[keyof typeof Mode] | null;
 	limit?: number | null;
+	offset?: number | null;
 }
 export interface GetProfileLeaderboardOptions {
 	username: string;

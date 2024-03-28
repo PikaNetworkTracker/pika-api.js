@@ -34,6 +34,7 @@ pika.getLeaderboard({
   interval: Pika.Interval.Weekly, // Not required, defaults to Interval.AllTime
   mode: Pika.Mode.Solo, // Not required, defaults to Mode.AllModes
   limit: 10, // Not required, defaults to 15
+  offset: 15, // Not required, defaults to 0
 });
 pika.getProfile("mallusrgreat");
 pika.getProfileLeaderboard({
