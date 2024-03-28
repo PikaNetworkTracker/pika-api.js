@@ -21,10 +21,10 @@ const Pika = require("pika.js");
 const pika = new Pika.PikaNetwork();
 pika.getTotalLeaderboard(Gamemode.BedWars);
 pika.getLeaderboard({
-  gamemode: Gamemode.BedWars,
-  leaderboardType: LeaderboardType.Kills,
-  interval: Interval.Weekly, // Not required, defaults to Interval.AllTime
-  mode: Mode.Solo, // Not required, defaults to Mode.AllModes
+  gamemode: Pika.Gamemode.BedWars,
+  leaderboardType: Pika.LeaderboardType.Kills,
+  interval: Pika.Interval.Weekly, // Not required, defaults to Interval.AllTime
+  mode: Pika.Mode.Solo, // Not required, defaults to Mode.AllModes
   limit: 10, // Not required, defaults to 15
 });
 pika.getProfile("mallusrgreat");
