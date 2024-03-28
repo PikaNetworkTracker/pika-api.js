@@ -1,0 +1,35 @@
+{
+  "name": "pika.js",
+  "version": "1.0.0",
+  "description": "Easiest way to interact with the Pika Network API",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "main": "lib/index.js",
+  "repository": "https://github.com/PikaNetworkTracker/pikanetwork-api-wrapper",
+  "author": {
+    "name": "mallusrgreat",
+    "email": "mallusrgreat@duck.com",
+    "url": "https://github.com/mallusrgreatv2"
+  },
+  "license": "MIT",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "types": "tsc"
+  },
+  "dependencies": {
+    "undici": "^6.10.2",
+    "zod": "^3.22.4",
+    "zod-validation-error": "^3.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/PikaNetworkTracker/pikanetwork-api-wrapper/main/LICENSE"
+    }
+  ]
+}
