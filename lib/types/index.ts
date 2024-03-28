@@ -79,3 +79,34 @@ export interface GamemodeRank {
 	season?: boolean | null;
 	expiry: number;
 }
+export interface Recap {
+	id: string;
+	mapName: string;
+	gameType: string;
+	gameServerName: string;
+	gameStart: string;
+	gameDuration: string;
+	users: RecapUser[];
+	winners: string[];
+	stats: string[];
+}
+
+export interface RecapUser {
+	username: string;
+	stats: Stats;
+}
+
+export interface Stats {
+	Kills: number | string;
+	Deaths: string;
+	"Blocks moved": string;
+	"Time of death": string;
+	"Time of death (ms)": number;
+	"Blocks placed": number | string;
+	"Blocks mined": number | string;
+	"Resources collected": string;
+	"Items bought": number | string;
+	"Beds destroyed": number | string;
+	Assists: number | string;
+	"Final kills": number | string;
+}
