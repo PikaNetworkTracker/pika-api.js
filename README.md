@@ -27,7 +27,7 @@ import Pika from "pika-api.js";
 const Pika = require("pika-api.js");
 
 const pika = new Pika.PikaNetwork();
-pika.getTotalLeaderboard(Gamemode.BedWars);
+pika.getTotalLeaderboard(Pika.Gamemode.BedWars);
 pika.getLeaderboard({
   gamemode: Pika.Gamemode.BedWars,
   leaderboardType: Pika.LeaderboardType.Kills,
@@ -36,5 +36,12 @@ pika.getLeaderboard({
   limit: 10, // Not required, defaults to 15
 });
 pika.getProfile("mallusrgreat");
+pika.getProfileLeaderboard({
+  username: "BlakD3mon_",
+  gamemode: Pika.Gamemode.BedWars,
+  interval: Pika.Interval.Weekly, // Not required, defaults to Interval.AllTime
+  mode: Pika.Mode.Solo, // Not required, defaults to Mode.AllModes
+  limit: 10, // Not required, defaults to 15
+});
 pika.getRecap("d1a2a364-148a-4efe-af1e-f40cd7973d4f");
 ```
