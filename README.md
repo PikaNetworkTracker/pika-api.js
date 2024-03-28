@@ -28,4 +28,5 @@ pika.getLeaderboard({
   limit: 10, // Not required, defaults to 15
 });
 pika.getProfile("mallusrgreat");
+pika.getRecap("d1a2a364-148a-4efe-af1e-f40cd7973d4f");
 ```
