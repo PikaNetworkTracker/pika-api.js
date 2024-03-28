@@ -76,6 +76,6 @@ export interface GamemodeRank {
 	name: string;
 	displayName: string;
 	server: string;
-	season?: unknown; // TODO: set real type, dk anyone with ssnl rank rn
+	season?: boolean | null;
 	expiry: number;
 }
