@@ -8,7 +8,7 @@ export interface TotalLeaderboardEntry {
 }
 export interface Leaderboard {
 	metadata: Metadata;
-	entries: Entry[];
+	entries: Entry[] | null;
 }
 
 export interface Entry {
@@ -24,6 +24,13 @@ export interface Metadata {
 export interface GetLeaderboardOptions {
 	gamemode: (typeof Gamemode)[keyof typeof Gamemode];
 	leaderboardType: (typeof LeaderboardType)[keyof typeof LeaderboardType];
+	interval?: (typeof Interval)[keyof typeof Interval] | null;
+	mode?: (typeof Mode)[keyof typeof Mode] | null;
+	limit?: number | null;
+}
+export interface GetProfileLeaderboardOptions {
+	username: string;
+	gamemode: (typeof Gamemode)[keyof typeof Gamemode];
 	interval?: (typeof Interval)[keyof typeof Interval] | null;
 	mode?: (typeof Mode)[keyof typeof Mode] | null;
 	limit?: number | null;
@@ -109,4 +116,20 @@ export interface Stats {
 	"Beds destroyed": number | string;
 	Assists: number | string;
 	"Final kills": number | string;
+}
+export interface ProfileLeaderboard {
+	"Bow kills": Leaderboard;
+	Kills: Leaderboard;
+	"Games played": Leaderboard;
+	"Final deaths": Leaderboard;
+	"Arrows shot": Leaderboard;
+	"Highest winstreak reached": Leaderboard;
+	"Beds destroyed": Leaderboard;
+	Losses: Leaderboard;
+	"Arrows hit": Leaderboard;
+	"Melee kills": Leaderboard;
+	"Final kills": Leaderboard;
+	Deaths: Leaderboard;
+	"Void kills": Leaderboard;
+	Wins: Leaderboard;
 }
