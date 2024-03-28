@@ -1,9 +1,9 @@
 {
-  "name": "pika.js",
+  "name": "pn.js",
   "version": "1.0.0",
   "description": "Easiest way to interact with the Pika Network API",
   "main": "lib/index.js",
-  "repository": "https://github.com/PikaNetworkTracker/pika.js",
+  "repository": "https://github.com/PikaNetworkTracker/pn.js",
   "author": {
     "name": "mallusrgreat",
     "email": "mallusrgreat@duck.com",

@@ -1,6 +1,6 @@
-# pika.js
+# pn.js
 
-Pika.js is an NPM package that helps to interact with the public Pika Network API.
+pn.js is an NPM package that helps to interact with the public Pika Network API.
 
 ## Features
 
@@ -14,9 +14,9 @@ Pika.js is an NPM package that helps to interact with the public Pika Network AP
 ## Usage
 
 ```js
-import Pika from "pika.js";
+import Pika from "pn.js";
 // or
-const Pika = require("pika.js");
+const Pika = require("pn.js");
 
 const pika = new Pika.PikaNetwork();
 pika.getTotalLeaderboard(Gamemode.BedWars);
