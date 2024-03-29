@@ -1,6 +1,6 @@
 {
   "name": "pika-api.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Easiest way to interact with the Pika Network API",
   "main": "lib/index.js",
   "repository": "https://github.com/PikaNetworkTracker/pika-api.js",
