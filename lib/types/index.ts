@@ -134,3 +134,40 @@ export interface ProfileLeaderboard {
 	"Void kills": Leaderboard;
 	Wins: Leaderboard;
 }
+export interface FactionsTop {
+	factionTag: string;
+	place: number;
+	worth: number;
+	factionData: FactionData;
+	creationTime: string;
+}
+
+export interface FactionData {
+	faction: string;
+	worth: string;
+	place: number;
+	active_strikes: number;
+	total_strikes: number;
+	owner?: string;
+	founded_date: number;
+	members: string[];
+	blocks: FactionBlocks;
+	spawners: FactionBlocks;
+}
+
+export interface FactionBlocks {
+	SILVERFISH?: number;
+	VILLAGER?: number;
+	BLAZE?: number;
+	CREEPER?: number;
+	ZOMBIE?: number;
+	WITCH?: number;
+	PIGZOMBIE?: number;
+	SHEEP?: number;
+	CHICKEN?: number;
+	SPIDER?: number;
+	PIG?: number;
+	COW?: number;
+	SKELETON?: number;
+	IRONGOLEM?: number;
+}
