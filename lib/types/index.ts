@@ -171,3 +171,10 @@ export interface FactionBlocks {
 	SKELETON?: number;
 	IRONGOLEM?: number;
 }
+export interface Count {
+	ip: string;
+	count: number;
+	discordCount: number;
+	updated_at: string;
+	updatedAtDate: Date;
+}
