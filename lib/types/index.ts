@@ -173,8 +173,9 @@ export interface FactionBlocks {
 }
 export interface Count {
 	ip: string;
-	count: number;
+	minecraftCount: number;
+	minecraftMax: number;
 	discordCount: number;
-	updated_at: string;
+	updatedAt: string;
 	updatedAtDate: Date;
 }
