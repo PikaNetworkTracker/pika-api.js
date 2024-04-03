@@ -15,7 +15,7 @@
     "types": "tsc"
   },
   "dependencies": {
-    "undici": "^6.10.2",
+    "undici": "^6.11.1",
     "zod": "^3.22.4",
     "zod-validation-error": "^3.0.3"
   },
@@ -25,7 +25,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.githubusercontent.com/PikaNetworkTracker/pikanetwork-api-wrapper/main/LICENSE"
+      "url": "https://raw.githubusercontent.com/PikaNetworkTracker/pika-api.js/main/LICENSE"
     }
   ]
 }
