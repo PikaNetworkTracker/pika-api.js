@@ -12,7 +12,8 @@
   "license": "MIT",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "types": "tsc"
+    "types": "tsc",
+    "test": "mocha"
   },
   "dependencies": {
     "undici": "^6.10.2",
