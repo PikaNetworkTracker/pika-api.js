@@ -47,6 +47,7 @@ export enum LeaderboardType {
   CustomCropsFarmed = "CUSTOM_CROPS_FARMED",
   RankRating = "RANK_RATING",
   LuckyCratesOpened = "LUCKYCRATES_OPENED",
+  CurrentKillstreak = "CURRENT_KILLSTREAK",
 }
 export enum Mode {
   AllModes = "ALL_MODES",
