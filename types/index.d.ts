@@ -48,6 +48,7 @@ export enum LeaderboardType {
   RankRating = "RANK_RATING",
   LuckyCratesOpened = "LUCKYCRATES_OPENED",
   CurrentKillstreak = "CURRENT_KILLSTREAK",
+  Deaths = "DEATHS",
 }
 export enum Mode {
   AllModes = "ALL_MODES",
