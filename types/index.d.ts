@@ -273,4 +273,8 @@ export class PikaNetwork {
    * Gets the basic information about pika network, including IP, player count, discord online count, etc.
    */
   getCount(): Promise<Count>;
+  /**
+   * Gets information about a guild.
+   */
+  getGuild(name: string): Promise<Clan>;
 }

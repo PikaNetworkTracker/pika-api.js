@@ -38,4 +38,10 @@ describe("PikaNetwork", () => {
       assert.strictEqual(typeof obj?.[0]?.total, "number");
     });
   });
+  describe("#getGuild", () => {
+    it("clan name must be BloodLust", async () => {
+      const obj = await pika.getGuild("BloodLust");
+      assert.strictEqual(obj.name, "BloodLust");
+    });
+  });
 });
